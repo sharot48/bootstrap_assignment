@@ -18,113 +18,130 @@
 
     <header class="container">
         <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">NOVA</a>
+            <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 gy-4">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#courses">Courses</a>
-                </li>         
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#deals">Deals</a>
-                </li>         
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#success">Success</a>
-                </li>         
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>         
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Register</a>
                 </li>
-
-                <nav class="navbar navbar-light bg-light">
-                  <form class="form-inline">
-                    <a href="https://docs.google.com/forms/d/17lU8k0kgRwliEglkvBzi0zChsqjwkbTT_Ey5Fe8fSNo/edit"><button class="btn btn-outline-success" type="button">Main button</button></a>
-                  </form>
-                </nav>
-              </ul>           
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#register">Register</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li>
+                          <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Register
+    </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Register Hare</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="text-dark">
+              <label for="log in">Log In</label><br>
+              <input type="text" placeholder="sharot11"><br>
+              <label for="password">Password</label><br>
+              <input type="password" placeholder="*****"><br>
+              <input class="btn btn-primary p-2" type="submit">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                  </li>
+              </ul>
             </div>
           </div>
         </nav>
-        <!-- Navbar End -->
 
+        <!-- Navbar End -->
     </header>
+
+
     <!-- Banner Section start -->
     <main class="container" >
-        <section id="home">
+        <section class="mt-4" id="home">
           
-          <div id="carouselExample" class="carousel slide" data-bs>
+          <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="row p-4 bg-secondary text-white">
-                    <div class="col-7 d-flex align-items-center">
-                      <div class="ps-5">
-                        <h1>We are believe in <br> timeless authentic <br> web design</h1>
-                        <p>We design and develop services for customers of all sizes, <br> specializing in creating stylish, modern websites, web <br> services and online stores.</p>
-                        <button type="button" class="btn btn-primary btn-lg">Get Started</button>
-                      </div>                     
-                    </div>
-                    <div class="col-5">
-                      <img src="./image/Carousale-1.png" class="img-fluid d-block w-100" alt="Slide-1">
-                    </div>
+                <img src="./image/Carousale-1.png" class="d-block w-100" alt="Slide-1">
+                <div class="carousel-caption d-none d-md-block mb-5 bg-dark bg-opacity-50">
+                  <h1>We are believe in <br> timeless authentic <br> web design</h1>
+                  <p>We design and develop services for customers of all sizes, <br> specializing in creating stylish, modern websites, web <br> services and online stores.</p>
+                  <button type="button" class="btn btn-primary btn-lg">Get Started</button>
                 </div>
-                
               </div>
               <div class="carousel-item">
-                <div class="row p-4 bg-secondary text-light">
-                  <div class="col-7 d-flex align-items-center">
-                    <div class="ps-5">
-                      <h1>We build cutting <br> edge websites and <br> experience</h1>
-                      <p class="py-2">Thinking at the junction of beauty <br> and elegance to create strong, <br> lasting and remarkable design and products.</p>
-                      <button type="button" class="btn btn-primary btn-lg">Get Started</button>
-                    </div>                     
-                  </div>
-                  <div class="col-5">
-                    <img src="./image/Carousale-2.jpg" class="img-fluid d-block w-100" alt="Slide-2">
-                  </div>
-              </div>
+                <img src="./image/Carousale-2.jpg" class="d-block w-100" alt="Slide-2">
+                <div class="carousel-caption d-none d-md-block mb-5 bg-dark bg-opacity-50">
+                  <h1>We build cutting <br> edge websites and <br> experience</h1>
+                  <p class="py-2">Thinking at the junction of beauty <br> and elegance to create strong, <br> lasting and remarkable design and products.</p>
+                  <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+                </div>
               </div>
               <div class="carousel-item">
-                <div class="row p-4 bg-secondary text-light">
-                  <div class="col-7 d-flex align-items-center">
-                    <div class="ps-5">
-                      <h1>Let's make <br> something great <br> togather</h1>
-                      <p class="py-2">We are specialized in modular systems, frontend web development, and interface design. Our superpower is a relentless drive to keep solutions simple, both in design and code.</p>
-                      <button type="button" class="btn btn-primary btn-lg">Get Started</button>
-                    </div>                     
-                  </div>
-                  <div class="col-5">
-                    <img src="./image/Carousale-3.jpg" class="img-fluid d-block w-100" alt="Slide-2">
-                  </div>
-              </div>
+                <img src="./image/Carousale-3.jpg" class="d-block w-100" alt="Slide-3">
+                <div class="carousel-caption d-none d-md-block mb-5 bg-dark bg-opacity-50">
+                  <h1>Let's make <br> something great <br> togather</h1>
+                  <p class="py-2">We are specialized in modular systems, frontend web development, <br> and interface design. Our superpower is a relentless drive to keep solutions simple, <br> both in design and code.</p>
+                  <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+                </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+        
 
         </section>
       <!-- Banner Section End -->
 
       <!-- Courses section Start -->
       
-      <section class="mt-5" id="courses">
-        <h1>Discover Our Popular <br> Courses</h1>
-        <p class="pt-2 pb-5">Our courses are taught in a very simple <br> and fun way. Enroll the course of your choice now</p>
+      <section id="courses">
+        <h1 class="mt-5">Discover Our Popular <br> Courses</h1>
+        <p class="mb-2">Our courses are taught in a very simple <br> and fun way. Enroll the course of your choice now</p>
         <div class="row">
           <!-- Card-1 -->
           <div class="col col-lg-6 col-md-12 col-sm-12">
@@ -281,11 +298,55 @@
       </section>
       <!-- Deals Section End -->
 
+      <!-- Modal section start -->
+      
+      <section class=" bg-info text-start">
+        <div class="d-flex align-items-center justify-content-between p-5">
+          <div>
+            <h1>Ready to Join?</h1>
+            <p>It is long established fact that a reader will be distracted by the <br> readble contant of the page when lookin at it's layout</p>
+          </div>
+            <div class="me-5">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-outline-dark btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Register
+                      </button>
+            
+                 <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Register Hare</h1>
+                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="text-dark">
+                              <label for="log in">Log In:</label><br>
+                              <input type="text" placeholder="sharot11"><br>
+                              <label for="password">Password:</label><br>
+                              <input type="password" placeholder="*****"><br>
+                              <input class="btn btn-primary p-2" type="submit">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+            </div>
+        </div>
+      </section>
+      <!-- Modal section End -->
+      
       <!-- Successfull Students section start -->
       
-      <section class="container" id="success">
+      <section class="container text-start" id="success">
 
         <h1>Our Successfull Students </h1>
+        <p>They have been working with integrity for a long time. Today they are all successful</p>
 
         <div class="row gx-5">
 
@@ -324,13 +385,8 @@
                 <p class="card-text">UI/UX Designer</p>
               </div>
             </div>
-          </div>
-          
-
-        </div>
-
-          
-
+          </div>         
+        </div>         
       </section>
       <!-- Successfull Students section En -->
  
@@ -408,7 +464,22 @@
       </section>    
       <!-- QA Section End-->
 
+
+
     </main>
+
+    <div class="d-none d-xl-block">
+
+      <h1>Trusted by over 800+ companies</h1>
+   
+      <img src="./image/Company logo/Company logo-1.png" class="img-fluid mx-4" width="100px" alt="logo image-2">
+      <img src="./image/Company logo/Company logo-2.png" class="img-fluid mx-4" width="100px" alt="logo-image-3">
+      <img src="./image/Company logo/Company logo-3.png" class="img-fluid mx-4" width="100px" alt="logo image-4">
+      <img src="./image/Company logo/Company logo-4.png" class="img-fluid mx-4" width="100px" alt="logo image-5">
+      <img src="./image/Company logo/Company logo-5.png" class="img-fluid mx-4" width="100px" alt="logo image-1">
+      <img src="./image/Company logo/Company logo-6.png" class="img-fluid mx-4" width="100px" alt="logo image-6">
+    </div>
+
     <!-- Footer start -->
     
     <footer class="text-center bg-dark text-white p-5 mt-5 h-100">
